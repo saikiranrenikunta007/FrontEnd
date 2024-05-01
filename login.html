@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin:0px;
+            padding: 0px;
+        }
+        .container {
+            display: flex;
+            width:100%;
+            height: 100%;
+
+        }
+        .left 
+        {
+            height: 100%;
+            width:50%;
+            font-family: Poppins;
+        }
+        .consent
+        {
+            display: inline-flex;
+            gap: 10px;
+            font-size: 9px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        hr
+        {
+            width:30%;
+            height: 0px;
+        }
+        #or 
+        {
+            width:22%;
+            height:14px;
+        }
+        .right
+        {
+            width:50%;
+            height:100%;
+        }
+        .or 
+        {
+            display: flex;
+        }
+        input 
+        {
+            border-radius: 10px;
+            border: 1px solid #D9D9D9;
+        }
+        .signup 
+        {
+            margin-top:202px;
+            height: 638px;
+        }
+        h1{
+            font-weight: 500;
+            font-size: 32px; 
+            margin-bottom: 20px;
+        }
+        .nameClass 
+        {
+            margin-top: 110.53px;
+        }
+        /* .emailClass 
+        {
+           margin-top: 77.7px;
+        } */
+        .passwordClass 
+        {
+            margin-top : 77.69;
+        }
+        .item
+        {
+            height: 58px;
+            width: 404px;
+        }
+        .signup-button 
+        {
+            width: 404px;
+            height: 35.02px;
+            margin-top:22px;
+            background-color: #3A5B22;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border-radius: 10px;
+            padding-top: 14px;
+            margin-bottom: 70px;
+        }
+        .third-party 
+        {
+            display:flex;
+            gap: 10px;
+            margin-top: 80px;
+        }
+        .tp-item 
+        {
+            width: 190px;
+            height: 32px;
+            top: 560px;
+            padding: 4px, 20px, 4px, 20px;
+            border-radius: 10px;
+            border: 1px solid #D9D9D9;
+        }
+        .tp-item>p {
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        .logo 
+        {
+            width: 24px;
+            height: 24px;
+        }
+        .account 
+        {
+            width:183px;
+            height:21px;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-left:95px;
+            margin-top : 10px;
+        }
+        input[placeholder]{
+            width: 84px;
+            height: 15px;
+            font-family: Poppins;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 15px;
+            letter-spacing: 0em;
+            text-align: left;
+            font: muted;
+            padding-left:10px;
+        }
+        form>.item{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="left">
+           <div class="signup">
+               <h1>Welcome back</h1>
+               <h5>Enter your credentials to access your account</h5>
+               <form>
+                <div class="item nameClass">
+                    <label for="name" class="for">Name</label>
+                    <input style="width: 404px; height:32px;" type="text" id="name" placeholder="Enter your name"></textarea>
+                </div>
+                <div class="item emailClass">
+                    <label for="email" >Email address</label>
+                    <input style="width: 404px; height:32px;" type="email" id="email" placeholder="Enter your email"/>
+                </div>
+                <div class="item">
+                    <label for="password" class="for">Password</label>
+                    <input style="width: 404px; height:32px;" type="password" id="password" placeholder="Password"/>
+                </div>
+               </form>
+               <div class="consent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                  </svg>
+                <p>I agree to the terms & policy</p>
+                </div>
+                <div class="signup-button">
+                    <p>Login</p>
+                </div>
+                <div class="or">
+                    <hr>Or<hr>
+                </div>
+                <div class="third-party">
+                    <div class="google tp-item">
+                       <p><img src="./assets/icons8-google 1.jpg" alt="google-image" class="logo"> Sign in with Google</p>
+                    </div>
+                    <div class="apple tp-item" >
+                        <p><img src="./icons8-apple-logo 1.jpg" alt="google-image" class="logo"> Sign in with Google</p>
+                    </div>
+                </div>
+                <div class="account">
+                    <p>Don't have account?  <a href="./index.html"> Sign Up</a></p>
+                </div>
+           </div>
+        </div>
+        <div class="right">
+            <img src="./assets/chris-lee-70l1tDAI6rM-unsplash 1.jpg" alt="leaf image">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
